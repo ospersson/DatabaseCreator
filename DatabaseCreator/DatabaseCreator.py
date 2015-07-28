@@ -1,4 +1,4 @@
-import sqlite3 as lite
+﻿import sqlite3 as lite
 import sys
 
 con = None
@@ -49,7 +49,7 @@ except lite.Error as e:
     if con:
         con.rollback()
 
-    print ("Error: ", e.args[0])
+    print("Error: ", e.args[0])
     sys.exit(1)
     
 finally:
